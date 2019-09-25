@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import { hot } from 'react-hot-loader';
 
-export default class App extends Component {
+const title = 'React minimal boilerplate.';
+
+class App extends Component {
   render() {
     return (
-      <h1>Hello, world.</h1>
+      <div>{title} <h1>Hello, world.</h1></div>
     );
   }
 }
+
+export default hot(module)(App);
